@@ -74,9 +74,13 @@ public class AssignmentTcThree {
 	    Select drpdwn5 = new Select(ele5);
 	    drpdwn5.selectByValue("AA");
 	    
-	    
-	 
 	    driver.findElement(By.className("smallSubmit")).click();
+	    
+	    
+	    String text = driver.findElement(By.id("viewLead_firstName_sp")).getText();
+	    System.out.println("text");
+	    String title = driver.getTitle();
+	    System.out.println(title);
 	    
 	    System.out.println("Test case passed");
 	    
